@@ -1,0 +1,206 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    background-color: #000000 !important;
+    border-bottom: 2px solid #dc3545;
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    font-family: inherit;
+    font-size: 1.1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem !important;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    position: relative;
+    margin: 0 12px;
+}
+
+.nav-link:hover {
+    color: #dc3545 !important;
+    text-shadow: 0 0 8px rgba(220, 53, 69, 0.7);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #dc3545;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 0.5px;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.catalog-title {
+    position: relative;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.catalog-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #dc3545;
+}
+
+.card {
+    transition: transform 0.3s;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.card-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+
+.card-text {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: 1px solid #000000;
+}
+
+.btn {
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+
+.btn-outline-primary {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-primary:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.btn-outline-success {
+    color: #000000;
+    border-color: #000000;
+}
+
+.btn-outline-success:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-dark {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.btn-dark:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-primary {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-primary:hover {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+footer {
+    background-color: #000000 !important;
+    border-top: 2px solid #dc3545;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer h5 {
+    color: #ffffff !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dc3545;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.3rem !important;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+}
